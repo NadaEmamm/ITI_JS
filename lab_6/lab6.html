@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 6</title>
+
+</head>
+<body>
+    <h1>Hangman Game</h1>
+    <div id="game">
+    <select id="select">
+        <option value="Movies">Movies</option>
+        <option value="Countries">Countries</option>
+        <option value="Animals">Animals</option>
+    </select>
+    <button id="startGame">Start Game</button>
+    <div id="word">
+    </div>
+    <p id="extra"></p>
+    </div>
+    <script type="module" >
+
+        import {random} from "./lab6.js"
+        document.getElementById("startGame").addEventListener("click", () => {
+            random();
+        });
+    </script>
+</body>
+</html>
