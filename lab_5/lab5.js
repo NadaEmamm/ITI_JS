@@ -69,7 +69,7 @@ async function fetchData() {
         const commentsResponse = await fetch('https://jsonplaceholder.typicode.com/comments');
         const comments = await commentsResponse.json();
 
-        const tableBody = document.querySelector('#userTable tbody');
+        const tableBody = document.getElementById("myPage");
 
         users.forEach(user => {
             const row = document.createElement('tr');
